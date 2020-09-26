@@ -3,6 +3,6 @@
 source 'https://rubygems.org'
 
 # For local preview
-# gem "github-pages", group: :jekyll_plugins
+gem "github-pages", group: :jekyll_plugins
 
 gemspec

@@ -25,3 +25,5 @@ You may import them into the [overleaf](https://www.overleaf.com/) and then edit
 > Week3: [pdf](./exercise/week3.pdf), [tex](./exercise/week3.tex)
 
 > Week4: [pdf](./exercise/week4.pdf), [tex](./exercise/week4.tex)
+
+> Week5: [pdf](./exercise/week5.pdf), [tex](./exercise/week5.tex)
