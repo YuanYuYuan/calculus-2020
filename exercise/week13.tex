@@ -1,0 +1,177 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{tcolorbox}
+\usepackage[inline]{enumitem}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage[normalem]{ulem}
+\usepackage{graphicx}
+\usepackage{tasks}
+\settasks{label=(\alph*), label-offset=0.4em, label-width=1.5em}
+
+\usepackage{fancyhdr}
+\fancyhf{}
+\setlength{\headheight}{36pt}
+\renewcommand{\headrulewidth}{0pt}
+\thispagestyle{fancy}
+\lhead{Calculus Exercise}
+\chead{Week 13 (7.4, 7.5, 7.8)}
+\rhead{\underline{ID:\hspace{7.4em}} \\ \vspace{0.2cm} \uline{Name:\hspace{6em}}}
+\cfoot{\thepage}
+
+\begin{document}
+\begin{enumerate}
+\item[7.4.27]
+    Evaluate the integral.
+    \[
+        \int \frac{4x}{x^{3} + x^{2} + x + 1}dx
+    \]
+
+
+\vspace{6cm}
+
+\item[7.4.50]
+    Make a substitution to express the integrand as a rational function and then
+    evaluate the integral.
+    \[
+        \int \frac{\sqrt{1 + \sqrt{x}}}{x} dx
+    \]
+
+\vspace{6cm}
+
+\item[7.4.58]
+    Use integration by parts, together with the techniques of this section,
+    to evaluate the integral.
+    \[
+        \int x \tan^{-1} x dx
+    \]
+
+\newpage
+
+\item[7.4.60]
+    Evaluate $\displaystyle \int \frac{dx}{x^{2} + k}$ by considering several
+    cases for the constant $k$.
+
+\vspace{8cm}
+
+\item[7.4.63]
+    \textbf{Weierstrass Substitution} The German mathematical Karl Weierstrass
+    (1815 - 1897) noticed that the substitution $t=\tan (\frac{x}{2})$
+    will convert any rational function of $\sin x$ and $\cos x$ into an
+    ordinary rational function of $t$.
+
+    \begin{enumerate}
+        \item If $t=\tan (\frac{x}{2})$, $-\pi < x < \pi$, sketch a right
+            triangle or use trigonometric identities to show that
+            \[
+                \cos \frac{x}{2} = \frac{1}{\sqrt{1+t^{2}}}
+                \text{ and }
+                \sin \frac{x}{2} = \frac{t}{\sqrt{1+t^{2}}}.
+            \]
+        \item Show that
+            \[
+                \cos x = \frac{1-t^{2}}{\sqrt{1+t^{2}}}
+                \text{ and }
+                \sin x = \frac{2t}{\sqrt{1+t^{2}}}.
+            \]
+        \item Show that
+            \[
+                dx = \frac{2}{1+t^{2}}dt.
+            \]
+    \end{enumerate}
+
+\newpage
+
+\item[7.5.8]
+    Three integrals are given that, although they look similar, may
+    require different techniques of integration. Evaluate the integrals.
+
+    (a) $\displaystyle \int e^{x} \sqrt{e^{x}-1}dx$
+    \hspace{1cm}
+    (b) $\displaystyle \int \frac{e^{x}}{\sqrt{1-e^{2x}}}dx$
+    \hspace{1cm}
+    (c) $\displaystyle \int \frac{1}{\sqrt{e^{x}-1}}dx$
+
+\vspace{6cm}
+
+\item[7.5.27]
+    Evaluate the integral $\displaystyle \int e^{x+e^{x}}dx$.
+
+\vspace{6cm}
+
+\item[7.5.44]
+    Evaluate the integral $\displaystyle \int \frac{1+\sin x}{1+\cos x}dx$.
+
+\newpage
+
+\item[7.5.76]
+    Evaluate the integral $\displaystyle \int \frac{x^{2}}{x^{6}+3x^{3}+x}dx$.
+
+\vspace{5cm}
+
+\item[7.5.93]
+    Evaluate the integral
+    $\displaystyle \int_{0}^{\frac{\pi}{6}}  \sqrt{1 + \sin 2\theta}d\theta$.
+
+\vspace{5cm}
+
+\item[7.8.68]
+    \textbf{Improper Integrals that Are Both Type 1 and Type 2}
+
+    The integral $\displaystyle \int_{a}^{\infty} f(x) dx $ is improper because
+    the interval $[a, \infty)$ is infinite. If $f$ has an infinite
+    discontinuity at $a$, then the integral is improper for a second
+    reason. In this case we evaluate the integral by expressing it as a sum
+    of improper integrals of Type 2 and Type 1 as follows:
+    \[
+        \int_{0}^{\infty} f(x) dx
+        = \int_{a}^{c} f(x)dx + \int_{c}^{\infty} f(x)dx,\ c > a
+    \]
+    Evaluate the given integral if it is convergent.
+    \[
+        \int_{2}^{\infty} \frac{1}{x \sqrt{x^{2}-4}}dx
+    \]
+
+\newpage
+
+\item[7.8.74]
+    The \textit{average speed} of molecules in an ideal gas is
+    \[
+        \bar{v} = \frac{4}{\sqrt{\pi}} \left( \frac{M}{2RT} \right)^{\frac{3}{2}}
+        \int_{0}^{\infty} v^{3}e^{-\frac{Mv^{2}}{2RT}} dv,
+    \]
+    where $M$ is the molecular weight of the gas, $R$ is the gas constant,
+    $T$ is the gas temperature, and $v$ is the molecular speed.
+
+    Show that
+    \[
+        \bar{v} = \sqrt{\frac{8RT}{\pi M}}.
+    \]
+
+\vspace{5cm}
+
+\item[7.8.75]
+    We know that the region
+    $R = \{(x, y) | x \geqslant 1, 0 \leqslant y \leqslant \frac{1}{x}\}$
+    has infinite area. Show that by rotating $R$ about the $x$-axis
+    we obtain a solid (called \textit{Gabriel's horn}) with finite volume.
+
+\vspace{5cm}
+
+\item[7.8.80]
+    A radioacitve substance decays exponentially: The mass at time $t$
+    is $m(t) = m(0) e^{kt}$, where $m(0)$ is the initial mass and
+    $k$ is a negative constant. The \textit{mean life} $M$ of an atom
+    in the substance is
+    \[
+        M = -k \int_{0}^{\infty} t e^{kt} dt.
+    \]
+
+    For the radioactive carbon isotope, $\prescript{14}{}{C}$, used
+    in radiocarbon dating, the value of $k$ is -0.000121.
+    Find the mean life of a $\prescript{14}{}{C}$ atom.
+
+\end{enumerate}
+\end{document}
